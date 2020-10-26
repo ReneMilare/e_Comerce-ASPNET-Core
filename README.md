@@ -1,1 +1,3 @@
 # e_Comerce-ASPNET-Core
+
+Curso em andamento...
