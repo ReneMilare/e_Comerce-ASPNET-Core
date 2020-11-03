@@ -27,7 +27,7 @@ namespace CasaDoCodigo.Repositories
             var produto = contexto.Set<Produto>()
                             .Where(p => p.Codigo == codigo)
                             .SingleOrDefault();
-
+            
             if (produto == null)
             {
                 throw new ArgumentException("Produto não encontrado");
@@ -73,7 +73,7 @@ namespace CasaDoCodigo.Repositories
         // Retorna um inteiro que pode ser nulo (?)
         private int? GetPedidoId()
         {
-            return contextAccessor.HttpContext.Session.GetInt32("peiddoId");
+            return contextAccessor.HttpContext.Session.GetInt32("pedidoId");
         }
 
         private void SetPedidoId(int pedidoId)
